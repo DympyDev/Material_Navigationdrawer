@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme.App">
+        <!-- We make the StatusBar translucent, this way we have colors all the way to the top of the screen -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

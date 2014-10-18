@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The background color for all "windows", in case you want to have the translucent statusbars in KitKat, you're going to want to have a background color for all "windows" -->
+    <color name="background_color">#eeeeee</color>
+
+    <!-- The following colors are all taken from: http://www.google.com/design/spec/style/color.html -->
+    <!-- The "main"-colors (the non-primary or accent colors) are the "500" values -->
+    <!-- The "primary"-colors are the "700" values-->
+    <!-- The "accent"-colors are the "100" values-->
+
+    <!-- The "Deep Purple" color -->
+    <color name="purple">#673ab7</color>
+    <color name="purple_primary">#512da8</color>
+    <color name="purple_accent">#d1c4e9</color>
+
+    <!-- The "Deep Orange" color -->
+    <color name="orange">#ff5722</color>
+    <color name="orange_primary">#e64a19</color>
+    <color name="orange_accent">#ffccbc</color>
+
+    <!-- The "Green" color -->
+    <color name="green">#259b24</color>
+    <color name="green_primary">#0a7e07</color>
+    <color name="green_accent">#a3e9a4</color>
+</resources>

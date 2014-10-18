@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="BaseTheme.App">
+        <!-- WARNING! If you want to keep the nicely colored StatusBar, keep this reference. -->
+        <!-- Possible extras, for the Lollipop stuff-->
+    </style>
+</resources>

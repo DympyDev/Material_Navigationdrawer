@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- This is the Toolbar, the ActionBar replacement with the fancy icon (the one that changes from the 3 lines to the arrow and back) -->
+    <!-- The 'app:theme' part defines the style the Toolbar should inherit from -->
+    <!-- The 'android:minHeight="?attr/actionBarSize"' part makes the toolbar as big as the default ActionBar -->
+    <!-- The 'android:background="?attr/colorPrimary"' part makes the background color the same as the Primary color defined in the styles.xml -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!-- As the main content view, the view below consumes the entire
+             space available using match_parent in both dimensions. -->
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color" />
+
+        <!-- android:layout_gravity="start" tells DrawerLayout to treat
+             this as a sliding drawer on the left side for left-to-right
+             languages and on the right side for right-to-left languages.
+             If you're not building against API 17 or higher, use
+             android:layout_gravity="left" instead. -->
+        <!-- The drawer is given a fixed width in dp and extends the full height of
+             the container. -->
+        <fragment
+            android:id="@+id/navigation_drawer"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:name="com.dympydev.material_navdrawer.NavigationDrawerFragment"
+            tools:layout="@layout/frag_navdrawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="windowActionBar">false</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/purple_primary</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated which is used to tint widgets -->
+        <item name="colorAccent">@color/purple_accent</item>
+    </style>
+
+    <style name="BaseTheme.App">
+        <!-- WARNIGN! Do not remove, this is the fallback theme the app uses if the device is running on an Android version with an API level lower than 19 -->
+        <!-- Possible extras, for the non KitKat stuff-->
+    </style>
+</resources>
